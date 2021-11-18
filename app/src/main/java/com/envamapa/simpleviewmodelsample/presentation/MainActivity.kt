@@ -12,13 +12,13 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.envamapa.simpleviewmodelsample.R
 import com.envamapa.simpleviewmodelsample.SampleApplication
-import com.envamapa.simpleviewmodelsample.databinding.ActivityMain2Binding
+import com.envamapa.simpleviewmodelsample.databinding.ActivityMainBinding
 import com.envamapa.simpleviewmodelsample.di.HasModule
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMain2Binding
+    private lateinit var binding: ActivityMainBinding
 
     private lateinit var viewModel: ViewModelA
     private lateinit var viewModelFactory: ViewModelAFactory
@@ -26,7 +26,7 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMain2Binding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
